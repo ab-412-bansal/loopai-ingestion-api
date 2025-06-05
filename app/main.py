@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from uuid import uuid4
 from threading import Thread
 from app.tasks import enqueue_batches, scheduler_loop, ingestion_store
+import os
 
 app = Flask(__name__)
 
@@ -41,5 +42,6 @@ def get_status(ingestion_id):
         ]
     })
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__" or __name__ == "app.main":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
