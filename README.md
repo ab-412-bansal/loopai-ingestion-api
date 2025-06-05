@@ -162,5 +162,5 @@ All tests are in `tests/test_api.py`.
 ## 👨‍💻 Author
 
 Ayush Bansal — Loop.ai Assessment  
-Roll Number - 2210993778
-email - ayush3778.be22@chitkara.edu.in
+Roll Number - 2210993778<br>
+Email - ayush3778.be22@chitkara.edu.in
